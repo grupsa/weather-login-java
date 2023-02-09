@@ -1,4 +1,4 @@
-package gru.lessons.conversation.weather_login_java.data;
+package gru.lessons.conversation.weather_login_java.data.login;
 
 import gru.lessons.conversation.weather_login_java.data.model.LoggedInUser;
 

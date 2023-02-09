@@ -1,4 +1,4 @@
-package gru.lessons.conversation.weather_login_java.data;
+package gru.lessons.conversation.weather_login_java.data.login;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

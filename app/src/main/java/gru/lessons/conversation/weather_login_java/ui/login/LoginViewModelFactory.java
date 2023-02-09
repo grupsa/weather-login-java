@@ -4,8 +4,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import gru.lessons.conversation.weather_login_java.data.LoginDataSource;
-import gru.lessons.conversation.weather_login_java.data.LoginRepository;
+import gru.lessons.conversation.weather_login_java.WeatherLoginApp;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
@@ -18,7 +17,8 @@ public class LoginViewModelFactory implements ViewModelProvider.Factory {
     @SuppressWarnings("unchecked")
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
         if (modelClass.isAssignableFrom(LoginViewModel.class)) {
-            return (T) new LoginViewModel(LoginRepository.getInstance(new LoginDataSource()));
+            //return (T) new LoginViewModel(LoginRepository.getInstance(new LoginDataSource()));
+            return  (T) WeatherLoginApp.diComponent.getLoginViewModel();
         } else {
             throw new IllegalArgumentException("Unknown ViewModel class");
         }
